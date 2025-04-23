@@ -6,20 +6,17 @@ import Features from "./components/organisms/Features";
 import Gallery from "./components/organisms/Gallery";
 import Footer from "./components/organisms/Footer";
 
-const MainTemplate = ({ children }: { children: React.ReactNode }) => {
+export default function HomePage() {
   return (
     <div className="font-sans bg-[#ffff]">
       <Navbar />
-      {children}
       <Header />
       <div className="bg-white">
-      <Partners />
+        <Partners />
       </div>
-      <Features/>
+      <Features />
       <Gallery />
       <Footer />
     </div>
   );
-};
-
-export default MainTemplate;
+}
