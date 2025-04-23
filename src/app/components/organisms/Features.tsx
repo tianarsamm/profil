@@ -1,6 +1,7 @@
 // components/Features.tsx
 
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
@@ -29,7 +30,7 @@ export default function Features() {
       <div className="max-w-6xl mx-auto px-6 text-start mb-16">
         <p className="text-2xl text-[#dc5341] font-semibold">ABOUT</p>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
-        Let's get acquainted
+        Let&apos;s get acquainted
         </h2>
       </div>
 
@@ -37,7 +38,7 @@ export default function Features() {
         {features.map((feature, index) => (
           <div key={index} className="space-y-4">
             <div className="inline-block p-5 bg-white rounded-2xl">
-              <img
+              <Image
                 src={feature.icon}
                 alt={feature.title}
                 className="w-10 h-10 mx-auto"

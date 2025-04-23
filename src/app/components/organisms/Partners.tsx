@@ -1,3 +1,6 @@
+
+
+import Image from "next/image";
 export default function Partners() {
   const partners = [
     { 
@@ -38,7 +41,7 @@ export default function Partners() {
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
           >
-            <img
+            <Image
               src={partner.src}
               alt={partner.name}
               className="h-12 md:h-16 object-contain"

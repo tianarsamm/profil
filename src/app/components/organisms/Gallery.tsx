@@ -2,6 +2,7 @@
 
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Gallery() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -102,7 +103,7 @@ export default function Gallery() {
             >
               <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group">
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.title}
                     onClick={() => setSelectedImage(item.image)}
@@ -125,7 +126,7 @@ export default function Gallery() {
             onClick={() => setSelectedImage(null)}
           >
             <div className="relative">
-              <img
+              <Image
                 src={selectedImage}
                 alt="Preview"
                 className="max-w-3xl max-h-[90vh] object-contain rounded-lg shadow-lg"

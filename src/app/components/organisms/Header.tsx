@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Header() {
   return (
     <header className="flex flex-col md:flex-row items-center justify-between px-6 pt-10 pb-0 ">
@@ -11,7 +13,7 @@ export default function Header() {
         </p>
         {/* <a href="#about me" className="font-bold bg-[#dc5341] text-white px-5 py-4 rounded-xl text-sm shadow-md hover:bg-white hover:text-[#dc5341] transition duration-300 ease-in-out">About Me</a> */}
       </div>
-      <img
+      <Image
         src="/images/tian.svg"
         alt="Hero"
         className="w-full md:w-1/2 mt-0"
