@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-green-700 hover:text-green-500 p-2 rounded"
+            className="text-[#dc5341] hover:text-green-500 p-2 rounded"
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
