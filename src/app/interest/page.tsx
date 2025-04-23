@@ -23,8 +23,8 @@ export default function Interest() {
   ];
 
   return (
-    <div className="bg-[#dbfce7] container mx-auto px-6 py-16 min-h-screen">
-      <h1 className="text-3xl font-bold mb-8 text-orange-600 text-center">MY INTERESTS</h1>
+    <div className="bg-[#68c7c1] container mx-auto px-6 py-16 min-h-screen">
+      <h1 className="text-3xl font-bold mb-8 text-[#dc5341] text-center">MY INTERESTS</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {interests.map((interest, index) => (
